@@ -39,7 +39,6 @@ requirements:
     - python
     - mako
     - pybind11
-    - {{ pin_compatible('numpy') }}
     # Question: is this actually required, or is it optional?
     - pyproj
 
