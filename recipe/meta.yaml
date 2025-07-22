@@ -38,9 +38,7 @@ requirements:
   run:
     - python
     - mako
-    - pybind11
-    # Question: is this actually required, or is it optional?
-    - pyproj
+    - numpy
 
 test:
   imports:
