@@ -1,5 +1,5 @@
 {% set name = "cutde" %}
-{% set version = "23.6.25" %}
+{% set version = "25.7.21" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/cutde-{{ version }}.tar.gz
-  sha256: 946aeb03b3bf2f9060dabda1dd84330a67a7fddab27879010107382bcca31eac
+  sha256: b9e8521469653c3cd8cdbc79949c4dc66b26a62d2141a92fdb8394d8dba70b0e
 
 build:
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 4
+  number: 0
 
 requirements:
   build:
